@@ -1,0 +1,36 @@
+{
+  "name": "miniproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-git install",
+    "test": "start",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.7",
+    "multer": "^1.4.3",
+    "npm-git-install": "^0.3.0"
+  },
+  "gitDependencies": {
+    "private-Restro": "git@:VageshVora12/Restro.git#revision",
+    "public-Restro": "https://github.com/VageshVora12/Restro.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.12"
+  }
+}
