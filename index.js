@@ -23,6 +23,9 @@ app.use('/category',categoryRoute);
 app.use('/product',productRoute);
 app.use('/login',loginRoute);
 app.use('/session',sessionRoute);
+app.get('/',function(req,res){
+	res.send('Server Started');
+});
 mongoose.connect('mongodb+srv://vagesh12:vageshVora@cluster0.prgxn.mongodb.net/mini?retryWrites=true&w=majority')
     .then(() => {
         console.log("mongodb started.");
