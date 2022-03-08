@@ -16,7 +16,7 @@ app.use(session({
     resave:true,
     saveUninitialized:true
 }))
-app.use(cors({credentials:true,origin:"http://localhost:3000"}));
+app.use(cors({credentials:true,origin:"https://ecomm-a.herokuapp.com/"}));
 app.use(cookieParser());
 app.use('/user', userRoute);
 app.use('/category',categoryRoute);
