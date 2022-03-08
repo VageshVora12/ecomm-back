@@ -8,7 +8,7 @@
 "clean": "rm -rf build && mkdir build",
     "test": "start",
 "build": "npm run clean && npm run build-babel",
-"start": "babel-node ./src/index.js"
+"start": "babel-node index.js"
   },
   "keywords": [],
   "author": "",
