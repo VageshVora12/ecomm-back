@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "npm-git install",
+"build-babel": "babel -d ./build ./src -s",
+"clean": "rm -rf build && mkdir build",
     "test": "start",
-    "start": "babel-node index.js"
+"start": "npm run build && node ./build/index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "express-session": "^1.17.2",
     "mongoose": "^6.0.7",
     "multer": "^1.4.3",
+    "node": "^17.5.0",
     "npm-git-install": "^0.3.0"
   },
   "gitDependencies": {
