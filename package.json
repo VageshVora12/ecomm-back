@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-//"build-babel": "babel -d ./build ./src -s",
-//"clean": "rm -rf build && mkdir build",
+"build-babel": "babel -d ./build ./src -s",
+"clean": "rm -rf build && mkdir build",
     "test": "start",
-//"build": "npm run clean && npm run build-babel",
+"build": "npm run clean && npm run build-babel",
 "start": "babel-node index.js"
   },
   "keywords": [],
