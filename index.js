@@ -32,7 +32,4 @@ mongoose.connect('mongodb+srv://vagesh12:vageshVora@cluster0.prgxn.mongodb.net/m
     }).catch(() => {
         console.log("mongodb connection failed.")
     })
-app.listen(9000, function () {
-    console.log("SERVER STARTED");
-}
-)
+app.listen(process.env.PORT || 5000);
