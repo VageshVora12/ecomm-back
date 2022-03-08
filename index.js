@@ -16,7 +16,7 @@ app.use(session({
     resave:true,
     saveUninitialized:true
 }))
-// app.use(cors({credentials:true,origin:"https://ecomm-a.herokuapp.com/"}));
+// app.use(cors({credentials:true,origin:"http://localhost:3000"}));
 app.use(cors());
 app.use(cookieParser());
 app.use('/user', userRoute);
@@ -24,13 +24,13 @@ app.use('/category',categoryRoute);
 app.use('/product',productRoute);
 app.use('/login',loginRoute);
 app.use('/session',sessionRoute);
-app.get('/',function(req,res){
-	res.send('Server Started');
-});
 mongoose.connect('mongodb+srv://vagesh12:vageshVora@cluster0.prgxn.mongodb.net/mini?retryWrites=true&w=majority')
     .then(() => {
         console.log("mongodb started.");
     }).catch(() => {
         console.log("mongodb connection failed.")
     })
-app.listen(process.env.PORT || 5000);
+app.listen(9000, function () {
+    console.log("SERVER STARTED");
+}
+)
